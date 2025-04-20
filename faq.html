@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ & Resources | Mason Oaks</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body class="faq-page">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/mason-oaks-logo.svg" alt="Mason Oaks Logo" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#amenities">Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">FAQ & Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-gold" href="https://engage.goenumerate.com/s/masonoaks/" target="_blank">Community Portal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="faq-hero py-5">
+        <div class="container text-center">
+            <h1>FAQ & Resources</h1>
+            <p class="lead">Everything you need to know about living in Mason Oaks</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="faq-content py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Sidebar Navigation -->
+                <div class="col-lg-3 mb-4">
+                    <div class="sticky-top pt-4" style="top: 100px;">
+                        <div class="list-group">
+                            <a href="#important-links" class="list-group-item list-group-item-action">Important Links</a>
+                            <a href="#utilities" class="list-group-item list-group-item-action">Utilities Information</a>
+                            <a href="#new-homeowner" class="list-group-item list-group-item-action">New Homeowner Guide</a>
+                            <a href="#community-map" class="list-group-item list-group-item-action">Community Map</a>
+                            <a href="#faq-general" class="list-group-item list-group-item-action">General FAQ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <!-- Important Links Section -->
+                    <section id="important-links" class="mb-5">
+                        <div class="section-heading">
+                            <h2>Important Links</h2>
+                            <div class="separator"></div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-building text-gold me-2"></i>
+                                            Community Management
+                                        </h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3">
+                                                <strong>Community Site:</strong><br>
+                                                <a href="https://engage.goenumerate.com/s/masonoaks/" target="_blank">PPM Engage Portal</a>
+                                                <p class="small text-muted mt-1">Manage your account, make payments, submit requests</p>
+                                            </li>
+                                            <li class="mb-3">
+                                                <strong>Property Management:</strong><br>
+                                                <a href="https://ppmral.com/" target="_blank">PPM Real Estate</a>
+                                                <p class="small text-muted mt-1">Our professional property management company</p>
+                                            </li>
+                                            <li>
+                                                <strong>PPM Mobile App:</strong><br>
+                                                <a href="https://apps.apple.com/ml/app/ppm-community-portal/id6630370869" target="_blank">Download for iOS</a>
+                                                <p class="small text-muted mt-1">Access community features on the go</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-map-marker-alt text-gold me-2"></i>
+                                            Community & Local Resources
+                                        </h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3">
+                                                <strong>Facebook Group:</strong><br>
+                                                <a href="https://www.facebook.com/groups/812101052685107" target="_blank">Mason Oaks Community Group</a>
+                                                <p class="small text-muted mt-1">Connect with neighbors and stay updated</p>
+                                            </li>
+                                            <li class="mb-3">
+                                                <strong>Builder Website:</strong><br>
+                                                <a href="https://www.ryanhomes.com/new-homes/communities/10222120151676/north-carolina/wake-forest/mason-oaks" target="_blank">Ryan Homes - Mason Oaks</a>
+                                                <p class="small text-muted mt-1">Information about home models and community features</p>
+                                            </li>
+                                            <li>
+                                                <strong>Town of Wake Forest:</strong><br>
+                                                <a href="https://www.wakeforestnc.gov/" target="_blank">Official Town Website</a>
+                                                <p class="small text-muted mt-1">Local government resources and events</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Utilities Information Section -->
+                    <section id="utilities" class="mb-5">
+                        <div class="section-heading">
+                            <h2>Utilities Information</h2>
+                            <div class="separator"></div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-bolt text-gold me-2"></i>
+                                            Electric Service
+                                        </h5>
+                                        <p><strong>Provider:</strong> Duke Energy</p>
+                                        <p>Duke Energy provides electrical service to Mason Oaks residents. New homeowners should set up an account at least 3 business days before moving in.</p>
+                                        <ul>
+                                            <li>Customer Service: (800) 777-9898</li>
+                                            <li>Report Outage: (800) 419-6356</li>
+                                            <li><a href="https://www.duke-energy.com/home" target="_blank">Set Up Service Online</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-fire text-gold me-2"></i>
+                                            Natural Gas
+                                        </h5>
+                                        <p><strong>Provider:</strong> Enbridge (formerly PSNC Energy)</p>
+                                        <p>Enbridge provides natural gas to our community. Make arrangements for service at least 3 business days prior to your move-in date.</p>
+                                        <ul>
+                                            <li>Customer Service: (877) 776-2427</li>
+                                            <li>Gas Emergencies: (877) 776-2427</li>
+                                            <li><a href="https://www.enbridgegas.com/" target="_blank">Set Up Service Online</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-wifi text-gold me-2"></i>
+                                            Internet & Cable
+                                        </h5>
+                                        <p><strong>Providers:</strong> Spectrum and Brightspeed</p>
+                                        <p>Mason Oaks residents have multiple options for internet and cable services:</p>
+                                        <ul>
+                                            <li><strong>Spectrum:</strong> Cable and fiber options
+                                                <br><a href="https://www.spectrum.com/" target="_blank">Visit Website</a>
+                                                <br>Call: (855) 243-8892
+                                            </li>
+                                            <li><strong>Brightspeed:</strong> DSL and fiber options
+                                                <br><a href="https://www.brightspeed.com/" target="_blank">Visit Website</a>
+                                                <br>Call: (844) 769-8673
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-water text-gold me-2"></i>
+                                            Water & Sewer
+                                        </h5>
+                                        <p><strong>Provider:</strong> City of Raleigh Public Utilities</p>
+                                        <p>Water and sewer services for Mason Oaks are provided by the City of Raleigh Public Utilities Department.</p>
+                                        <ul>
+                                            <li>Customer Service: (919) 996-3245</li>
+                                            <li>Emergency: (919) 996-3245</li>
+                                            <li><a href="https://raleighnc.gov/services/water-and-sewer" target="_blank">Set Up Service Online</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-trash text-gold me-2"></i>
+                                            Trash & Recycling
+                                        </h5>
+                                        <p><strong>Provider:</strong> Town of Wake Forest</p>
+                                        <p>Trash and recycling services are provided by the Town of Wake Forest. Collection day in Mason Oaks is Wednesday.</p>
+                                        <ul>
+                                            <li>Place bins at curb by 6:00 AM on collection day</li>
+                                            <li>Remove bins by 7:00 PM on collection day</li>
+                                            <li><a href="https://www.wakeforestnc.gov/residents/public-works/solid-waste-collection" target="_blank">More Information</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-mail-bulk text-gold me-2"></i>
+                                            Mail Services
+                                        </h5>
+                                        <p><strong>Provider:</strong> United States Postal Service</p>
+                                        <p>Mason Oaks has community mailboxes located throughout the neighborhood. Your mailbox number and keys will be provided at closing.</p>
+                                        <ul>
+                                            <li>Lost mail? Fill out the lost mail form: <a href="https://www.usps.com/help/missing-mail.htm" target="_blank">USPS Missing Mail</a></li>
+                                            <li>Nearest Post Office: 1100 S Main St, Wake Forest, NC 27587</li>
+                                            <li>Phone: (800) 275-8777</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- New Homeowner Guide Section -->
+                    <section id="new-homeowner" class="mb-5">
+                        <div class="section-heading">
+                            <h2>New Homeowner Guide</h2>
+                            <div class="separator"></div>
+                        </div>
+                        
+                        <div class="accordion" id="homeownerGuide">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Sealing Countertops
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#homeownerGuide">
+                                    <div class="accordion-body">
+                                        <p>Mason Oaks homes feature beautiful quartz countertops that require periodic sealing to maintain their appearance and durability.</p>
+                                        <h6>Recommended Schedule:</h6>
+                                        <ul>
+                                            <li>Apply quartz sealer every 12-18 months</li>
+                                            <li>First application should be within 3 months of move-in</li>
+                                        </ul>
+                                        <h6>Recommended Products:</h6>
+                                        <ul>
+                                            <li>Stone Care International Quartz Sealer</li>
+                                            <li>Granite Gold Quartz Brite</li>
+                                        </ul>
+                                        <h6>How to Apply:</h6>
+                                        <ol>
+                                            <li>Clean countertops thoroughly and allow to dry completely</li>
+                                            <li>Apply sealer in small sections with a clean microfiber cloth</li>
+                                            <li>Allow to penetrate for 5-10 minutes (follow product instructions)</li>
+                                            <li>Buff with a clean cloth until dry</li>
+                                            <li>Avoid using countertops for 24 hours after sealing</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Sealing Grout Lines
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#homeownerGuide">
+                                    <div class="accordion-body">
+                                        <p>Properly sealed grout prevents staining and extends the life of your tile installations in bathrooms and kitchen areas.</p>
+                                        <h6>Recommended Schedule:</h6>
+                                        <ul>
+                                            <li>Seal bathroom grout within 3 months of move-in</li>
+                                            <li>Reseal kitchen and bathroom grout annually</li>
+                                        </ul>
+                                        <h6>Recommended Products:</h6>
+                                        <ul>
+                                            <li>Aqua Mix Sealer's Choice Gold</li>
+                                            <li>Custom Building Products TileLab Grout Sealer</li>
+                                        </ul>
+                                        <h6>How to Apply:</h6>
+                                        <ol>
+                                            <li>Clean grout lines thoroughly with a grout cleaner</li>
+                                            <li>Allow to dry completely (24 hours recommended)</li>
+                                            <li>Apply sealer with an applicator brush or bottle with applicator tip</li>
+                                            <li>Work in small sections, ensuring grout lines are fully saturated</li>
+                                            <li>Allow sealer to penetrate for 5-10 minutes</li>
+                                            <li>Wipe away excess sealer from tile surfaces</li>
+                                            <li>Allow 24-48 hours for sealer to cure before exposing to water</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Changing HVAC Filters
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#homeownerGuide">
+                                    <div class="accordion-body">
+                                        <p>Regular HVAC filter changes improve indoor air quality and help your system operate efficiently.</p>
+                                        <h6>Recommended Schedule:</h6>
+                                        <ul>
+                                            <li>1-2 inch filters: Every 1-3 months</li>
+                                            <li>4-5 inch filters: Every 6-12 months</li>
+                                            <li>More frequent changes during high-use seasons or if you have pets</li>
+                                        </ul>
+                                        <h6>Filter Sizes in Mason Oaks Homes:</h6>
+                                        <ul>
+                                            <li>Most homes use 16x25x1 filters (check your specific unit)</li>
+                                            <li>Some floor plans may use different sizes</li>
+                                        </ul>
+                                        <h6>How to Change:</h6>
+                                        <ol>
+                                            <li>Turn off your HVAC system</li>
+                                            <li>Locate the filter compartment (usually near the air handler)</li>
+                                            <li>Remove the old filter, noting the direction of airflow arrow</li>
+                                            <li>Insert the new filter with the arrow pointing toward the unit</li>
+                                            <li>Secure the filter compartment</li>
+                                            <li>Turn the system back on</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Water Heater Maintenance
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#homeownerGuide">
+                                    <div class="accordion-body">
+                                        <p>Proper water heater maintenance extends the life of your unit and ensures efficient operation.</p>
+                                        <h6>Recommended Schedule:</h6>
+                                        <ul>
+                                            <li>Flush water heater annually</li>
+                                            <li>Check pressure relief valve every 6 months</li>
+                                        </ul>
+                                        <h6>How to Flush Water Heater:</h6>
+                                        <ol>
+                                            <li>Turn off power to electric heaters or set gas heaters to "pilot"</li>
+                                            <li>Turn off cold water supply</li>
+                                            <li>Connect a garden hose to the drain valve</li>
+                                            <li>Open a hot water faucet in the house to prevent vacuum</li>
+                                            <li>Open the drain valve and allow tank to empty</li>
+                                            <li>Turn on cold water supply briefly to flush out sediment</li>
+                                            <li>Close drain valve, remove hose, and refill tank</li>
+                                            <li>When water flows normally from the open faucet, turn power back on</li>
+                                        </ol>
+                                        <p class="text-muted small">Note: If you're uncomfortable performing this maintenance yourself, consider hiring a professional plumber.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Bleeding Air from Water Lines
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#homeownerGuide">
+                                    <div class="accordion-body">
+                                        <p>Air trapped in water lines can cause sputtering faucets and reduced water flow. Bleeding the lines removes these air pockets.</p>
+                                        <h6>When to Bleed Lines:</h6>
+                                        <ul>
+                                            <li>After moving into a new home</li>
+                                            <li>After water service interruptions</li>
+                                            <li>When you hear knocking in pipes</li>
+                                            <li>When water flow is inconsistent</li>
+                                        </ul>
+                                        <h6>How to Bleed Air from Lines:</h6>
+                                        <ol>
+                                            <li>Turn off main water supply</li>
+                                            <li>Open the highest faucet in your home</li>
+                                            <li>Open the lowest faucet (usually in basement or first floor)</li>
+                                            <li>Turn water supply back on slowly</li>
+                                            <li>Allow water to run until it flows smoothly without sputtering</li>
+                                            <li>Close the lowest faucet first, then the highest</li>
+                                        </ol>
+                                        <p>Repeat process for hot water lines by running hot water until it flows smoothly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Seasonal Maintenance Checklist
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#homeownerGuide">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6>Spring (March-May):</h6>
+                                                <ul>
+                                                    <li>Check and clean gutters</li>
+                                                    <li>Inspect roof for winter damage</li>
+                                                    <li>Service air conditioning system</li>
+                                                    <li>Clean window screens</li>
+                                                    <li>Check exterior drainage</li>
+                                                    <li>Apply pre-emergent lawn treatment</li>
+                                                </ul>
+                                                
+                                                <h6>Summer (June-August):</h6>
+                                                <ul>
+                                                    <li>Check sprinkler system</li>
+                                                    <li>Clean dryer vent</li>
+                                                    <li>Check for insect infestations</li>
+                                                    <li>Inspect deck/patio for repairs</li>
+                                                    <li>Clean refrigerator coils</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6>Fall (September-November):</h6>
+                                                <ul>
+                                                    <li>Service heating system</li>
+                                                    <li>Clean gutters after leaves fall</li>
+                                                    <li>Check weatherstripping on doors/windows</li>
+                                                    <li>Drain outdoor faucets and irrigation</li>
+                                                    <li>Apply fall lawn fertilizer</li>
+                                                </ul>
+                                                
+                                                <h6>Winter (December-February):</h6>
+                                                <ul>
+                                                    <li>Check attic insulation</li>
+                                                    <li>Test smoke and carbon monoxide detectors</li>
+                                                    <li>Inspect fireplace and chimney (if applicable)</li>
+                                                    <li>Keep snow clear of HVAC units</li>
+                                                    <li>Check for ice dams on roof edges</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Community Map Section -->
+                    <section id="community-map" class="mb-5">
+                        <div class="section-heading">
+                            <h2>Community Map & Local Amenities</h2>
+                            <div class="separator"></div>
+                        </div>
+                        
+                        <p class="mb-4">Explore Mason Oaks and the surrounding Wake Forest area. Discover nearby restaurants, shops, parks, and other points of interest.</p>
+                        
+                        <div id="mapContainer" class="mb-4" style="height: 500px; border-radius: 8px;"></div>
+                        
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-utensils text-gold me-2"></i>
+                                            Dining
+                                        </h5>
+                                        <ul>
+                                            <li>Over the Falls (Downtown cuisine)</li>
+                                            <li>The Lemon Tree Café</li>
+                                            <li>Shorty's Famous Hot Dogs</li>
+                                            <li>The Burger Shop</li>
+                                            <li>Bodega Tapas & Wine Bar</li>
+                                            <li>Sugar Magnolia Café</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-shopping-bag text-gold me-2"></i>
+                                            Shopping
+                                        </h5>
+                                        <ul>
+                                            <li>Gateway Commons Shopping Center</li>
+                                            <li>Downtown Wake Forest shops</li>
+                                            <li>Wake Forest Crossing</li>
+                                            <li>The Factory (shopping & entertainment)</li>
+                                            <li>Triangle Town Center (15 min drive)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-tree text-gold me-2"></i>
+                                            Recreation
+                                        </h5>
+                                        <ul>
+                                            <li>E. Carroll Joyner Park</li>
+                                            <li>Flaherty Park</li>
+                                            <li>Wake Forest Reservoir</li>
+                                            <li>Factory Ice House (ice skating)</li>
+                                            <li>Heritage Golf Club</li>
+                                            <li>Greenway Trails System</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- General FAQ Section -->
+                    <section id="faq-general">
+                        <div class="section-heading">
+                            <h2>Frequently Asked Questions</h2>
+                            <div class="separator"></div>
+                        </div>
+                        
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faqOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+                                        I have lost mail, what do I do?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>If you've lost mail, fill out the lost mail form on the <a href="https://www.usps.com/help/missing-mail.htm" target="_blank">USPS website</a>. You can also contact the Wake Forest Post Office at (800) 275-8777 to inquire about missing mail.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faqTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                        When are HOA dues due and how do I pay them?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>HOA dues are collected quarterly and are due on the 1st of January, April, July, and October. Payment options include:</p>
+                                        <ul>
+                                            <li>Online through the <a href="https://engage.goenumerate.com/s/masonoaks/" target="_blank">PPM Engage Portal</a></li>
+                                            <li>Through the PPM Community Portal mobile app</li>
+                                            <li>By check mailed to the management company (address available in your welcome packet)</li>
+                                            <li>Auto-draft (contact PPM to set up)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faqThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                                        How do I request approval for exterior modifications?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>All exterior modifications require prior approval from the Architectural Review Committee (ARC). To submit a request:</p>
+                                        <ol>
+                                            <li>Log in to the <a href="https://engage.goenumerate.com/s/masonoaks/" target="_blank">PPM Engage Portal</a></li>
+                                            <li>Navigate to the "ARC Requests" section</li>
+                                            <li>Complete the form with detailed description and attach any plans, drawings, or product specifications</li>
+                                            <li>Submit your request</li>
+                                        </ol>
+                                        <p>The ARC typically reviews requests within 30 days. Do not begin work until you receive written approval.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faqFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                                        When is the pool open?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>The Mason Oaks community pool is typically open from Memorial Day weekend through Labor Day weekend, weather permitting. Pool hours are:</p>
+                                        <ul>
+                                            <li>Monday - Saturday: 10:00 AM - 8:00 PM</li>
+                                            <li>Sunday: 12:00 PM - 8:00 PM</li>
+                                        </ul>
+                                        <p>Access requires your community key fob. Pool rules and regulations are posted at the pool area and available on the community portal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faqFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                                        Who do I contact for general community questions or concerns?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>For general community questions or concerns, you have several resources:</p>
+                                        <ul>
+                                            <li><strong>Property Management:</strong> PPM Real Estate - (919) 551-8088 or through the community portal</li>
+                                            <li><strong>HOA Board:</strong> Email <a href="mailto:board@masonoakshoa.com">board@masonoakshoa.com</a></li>
+                                            <li><strong>Facebook Group:</strong> Join our <a href="https://www.facebook.com/groups/812101052685107" target="_blank">community Facebook group</a> to connect with neighbors</li>
+                                            <li><strong>Community Meetings:</strong> Attend quarterly board meetings (dates announced on the community portal)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faqSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix">
+                                        What are the trash collection and recycling days?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>In Mason Oaks, trash and recycling are collected on Wednesdays. Please follow these guidelines:</p>
+                                        <ul>
+                                            <li>Place bins at the curb by 6:00 AM on Wednesday</li>
+                                            <li>Remove bins by 7:00 PM the same day</li>
+                                            <li>Store bins out of sight from the street when not in use</li>
+                                            <li>Bulk item pickup requires scheduling with the town</li>
+                                        </ul>
+                                        <p>For holiday schedule adjustments or more information, visit the <a href="https://www.wakeforestnc.gov/residents/public-works/solid-waste-collection" target="_blank">Town of Wake Forest website</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/mason-oaks-logo.svg" alt="Mason Oaks Logo" height="80" class="mb-3">
+                    <p>A premier residential community in Wake Forest, North Carolina.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#amenities">Amenities</a></li>
+                        <li><a href="#important-links">FAQ & Resources</a></li>
+                        <li><a href="https://engage.goenumerate.com/s/masonoaks/" target="_blank">Community Portal</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p>
+                        <strong>Property Management:</strong><br>
+                        PPM Real Estate<br>
+                        <a href="https://ppmral.com/" target="_blank">ppmral.com</a><br>
+                        <a href="tel:9195518088">(919) 551-8088</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Mason Oaks Homeowners Association. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

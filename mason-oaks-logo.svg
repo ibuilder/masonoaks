@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circular background -->
+  <circle cx="250" cy="250" r="220" fill="#f5f5f5" stroke="#d4af37" stroke-width="6"/>
+  
+  <!-- Golden outer ring with subtle shimmer -->
+  <circle cx="250" cy="250" r="210" fill="none" stroke="#d4af37" stroke-width="8" stroke-dasharray="2,0.5" opacity="0.9"/>
+  
+  <!-- Inner circle with subtle gradient -->
+  <circle cx="250" cy="250" r="190" fill="url(#bgGradient)"/>
+  
+  <!-- Tree trunk - golden with wooden texture -->
+  <path d="M240,350 Q235,320 245,300 Q240,280 235,255 Q230,230 245,205 L255,205 Q270,230 265,255 Q260,280 255,300 Q265,320 260,350 Z" fill="url(#trunkGradient)"/>
+  
+  <!-- Tree roots -->
+  <path d="M240,350 Q220,360 200,355 Q190,365 170,360" fill="none" stroke="#b8860b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M260,350 Q280,360 300,355 Q310,365 330,360" fill="none" stroke="#b8860b" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Oak tree leaves - crimson -->
+  <g fill="#990000" opacity="0.9">
+    <!-- Bottom layer leaves -->
+    <path d="M250,205 Q180,225 170,175 Q220,185 250,165 Q280,185 330,175 Q320,225 250,205" />
+    <!-- Middle layer leaves -->
+    <path d="M250,165 Q190,175 160,135 Q210,145 250,125 Q290,145 340,135 Q310,175 250,165" />
+    <!-- Top layer leaves -->
+    <path d="M250,125 Q200,135 180,95 Q220,105 250,85 Q280,105 320,95 Q300,135 250,125" />
+    <!-- Crown of the tree -->
+    <path d="M250,85 Q230,80 220,65 Q250,55 250,45 Q250,55 280,65 Q270,80 250,85" />
+  </g>
+  
+  <!-- Subtle leaf highlights for shimmer effect -->
+  <g fill="#cc0000" opacity="0.5">
+    <ellipse cx="210" cy="185" rx="15" ry="10" />
+    <ellipse cx="290" cy="185" rx="15" ry="10" />
+    <ellipse cx="230" cy="145" rx="12" ry="8" />
+    <ellipse cx="270" cy="145" rx="12" ry="8" />
+    <ellipse cx="245" cy="105" rx="10" ry="6" />
+  </g>
+  
+  <!-- Text: Mason Oaks -->
+  <text x="250" y="390" font-family="Georgia, serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#333333">MASON OAKS</text>
+  
+  <!-- Text: Homeowners Association -->
+  <text x="250" y="420" font-family="Georgia, serif" font-size="16" text-anchor="middle" fill="#333333">HOMEOWNERS ASSOCIATION</text>
+  
+  <!-- Wake Forest, NC -->
+  <text x="250" y="445" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#555555">WAKE FOREST, NC</text>
+  
+  <!-- Definitions for gradients and effects -->
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f0f0"/>
+    </linearGradient>
+    
+    <!-- Trunk gradient with wood-like texture -->
+    <linearGradient id="trunkGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="20%" stop-color="#b8860b"/>
+      <stop offset="40%" stop-color="#d4af37"/>
+      <stop offset="60%" stop-color="#b8860b"/>
+      <stop offset="80%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+  </defs>
+</svg>
