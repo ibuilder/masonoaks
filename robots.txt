@@ -1,0 +1,20 @@
+# Mason Oaks HOA Website Robots.txt
+# Last updated: April 20, 2025
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /faq.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow any future private areas
+Disallow: /private/
+Disallow: /admin/
+
+# Crawl delay to prevent server overload
+Crawl-delay: 10
+
+# Sitemap location (if implemented in the future)
+# Sitemap: https://masonoaksnc.com/sitemap.xml
